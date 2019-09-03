@@ -1,7 +1,6 @@
 export default class Launch {
     constructor(data) {
         this.data = data;
-        this.create();
     }
     createImage(src, wrapper = 'div') {
         let $image = document.createElement('img');

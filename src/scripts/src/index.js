@@ -3,9 +3,9 @@ import jQuery from 'jquery';
 import Launch from './components/launch';
 
 class SpacexDB {
-    constructor() {
+    constructor(api = 'https://api.spacexdata.com/v3/launches') {
         this.$launches = document.getElementById('launches');
-        this.api = 'https://api.spacexdata.com/v3/launches';
+        this.api = api;
     }
 
     getLaunches() {
